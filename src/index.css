@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .app-container {
+        @apply relative flex flex-col justify-start items-center
+        w-100 h-fit mx-auto my-10 pb-16
+        bg-lightGray dark:bg-darkGray
+        rounded-3xl;
+    }
+
+    .change-mode-button {
+        @apply absolute right-0 flex items-center justify-center
+        w-9 h-9 mt-4 mr-4
+        bg-black dark:bg-lightGray
+        rounded-full
+        transition-transform duration-400 active:rotate-180;
+    }
+
+    .heading {
+        @apply p-4 mt-8
+        font-Geologica font-extrabold text-4xl text-black dark:text-white;
+    }
+
+    .input {
+        @apply w-72 h-7 p-3
+        bg-white dark:bg-black
+        font-Inter text-black dark:text-lightGray
+        rounded-xl;
+    }
+
+    .add-task-button {
+        @apply flex justify-center items-center
+        w-7 h-7 ml-3
+        bg-blue dark:bg-pink
+        text-black
+        rounded-2xl
+        hover:scale-105 active:scale-90;
+    }
+
+    .task-container {
+        @apply flex flex-row items-center
+        w-full min-h-10 mt-3
+        bg-mediumGray dark:bg-black
+        text-black dark:text-white
+        rounded-xl
+        animate-slideIn;
+    }
+
+    .task-text {
+        @apply flex-1 break-words overflow-hidden
+        m-2 ml-3 
+        font-Inter;
+    }
+
+    .delete-task-button {
+        @apply flex justify-center items-center
+        w-6 h-6 ml-auto mr-3
+        bg-blue dark:bg-pink 
+        rounded-xl
+        hover:scale-105 active:scale-90;
+    }
+}
