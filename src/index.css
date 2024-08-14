@@ -17,7 +17,7 @@
         w-9 h-9 mt-4 mr-4
         bg-black dark:bg-lightGray
         rounded-full
-        transition-transform duration-400 active:rotate-180;
+        transition-transform duration-500 active:rotate-180;
     }
 
     .heading {
