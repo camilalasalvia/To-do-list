@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { AddTaskBar } from './components/AddTaskBar';
-import { TaskList } from './components/TaskList';
+import { AddTaskBar } from './AddTaskBar';
+import { TaskList } from './TaskList';
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 
 export const ToDoApp = () => {
